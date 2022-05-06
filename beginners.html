@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>For beginners - Crusader Kings II</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pageformat">
+    <nav class="skip">
+        <a href="#main">Skip to content</a>
+    </nav>
+    <nav id="visually_impaired">
+        <button id="switch" onclick="toggleTheme()">Toggle contrast and letter size</button>
+        <script>
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+            }
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-norm') {
+                    setTheme('theme-dark');
+                }
+                else {
+                    setTheme('theme-norm');
+                }
+            }
+            (function () {
+                if (localStorage.getItem('theme') === 'theme-norm') {
+                    setTheme('theme-norm');
+                }
+                else {
+                    setTheme('theme-dark');
+                }
+            })();
+        </script>
+    </nav>
+    <header>
+        <div class="container-fluid">
+            <nav id="top">
+                <h1>Crusader Kings II</h1>
+                <figure><img src="media/header.jpg" alt="Header picture" class="img-fluid" id="header_pic"></figure>
+                <div class="menulist">
+                    <ul>
+                        <li><a href="index.html" class="other_pages">Opening page</a></li>
+                        <li><a href="beginners.html" class="current">For beginners</a></li>
+                        <li><a href="dlcs.html" class="other_pages">List of DLCs</a></li>
+                        <li><a href="form.html" class="other_pages">Form</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container-fluid">
+            <section>
+                <h2>For beginners</h2>
+                <div class="boxok">
+                    <article class="boxesRow1">
+                        <h3>Introducing the Game</h3>
+                        <p>Since <strong>Crusader Kings II</strong> has so many game <strong>mechanics</strong> and
+                            <strong>functions</strong> for the player to explore, it is
+                            understandably
+                            difficult to get into playing the game. I am sure that the very first campaign, that you will launch
+                            yourself into will
+                            be challenging and chaotic, because <strong>you will have to learn a lot</strong>. Hence, I had wrote a
+                            brief <strong>introduction</strong> to
+                            some of the
+                            <strong>core mechanics</strong>, which can get you started on the path of becoming a <strong>Crusader
+                                Kings II</strong> player.
+                        </p>
+                    </article>
+                    <article class="boxesRow1">
+                        <h3>Basic Controls</h3>
+                        <p>Starting with the <strong>controls</strong>, this game represents the old RTS games by continuing the
+                            somewhat uncomfortable
+                            but working
+                            tradition of giving the <strong>arrow keys</strong> the control over the camera. Your
+                            <strong>mouse</strong> is also a key element. You
+                            maneuver through
+                            the different interfaces by <strong>left clicking</strong> where you want to go, while the <strong>right
+                                mouse button</strong> is reserved for
+                            tasks like
+                            <strong>commanding your armys movement</strong>. Zooming in and out is done by the <strong>mouse
+                                wheel</strong>. To pause the flowing of
+                            time, you can
+                            press the <strong>spacebar</strong>.
+                        </p>
+                    </article>
+                    <div class="boxesRow1">
+                        <aside>
+                            <figure><a href="media/interface.png"><img src="media/interface_small.png" alt="Character interface"
+                                        class="img-thumbnail"></a>
+                                <figcaption>Example of a character interface</figcaption>
+                            </figure>
+                        </aside>
+                    </div>
+                    <article>
+                        <h3>The Character Interface</h3>
+                        <p>The most important interface of any of your future games is the <strong>character interface</strong>.
+                            Here, you can see your
+                            skills,
+                            family members, wives/husbands, lovers, vassals, rivals, etc. It is a panel, that can help you to better
+                            understand the
+                            skills of your character, and of others, see that who is your friend and who is your enemy, and that
+                            which
+                            of your sons
+                            or daughters is the most fit to rule, after your eventual death.
+                            The skills of every character is determined by a <strong>point system</strong>, in which you get points
+                            in five different
+                            areas of
+                            knowledge based on your education, traits, special modifiers, and events. These fields are respectively:
+                            <strong>Diplomacy</strong>,
+                            which is used to interact with others, and gains prestige for you. <strong>Martial</strong>, which
+                            determines your knowledge
+                            of military
+                            and warfare. <strong>Stewardship</strong>, which is your skill of managing your domains and gaining
+                            wealth. <strong>Intrigue</strong>, which
+                            is the main
+                            factor considering schemes, sabotage, and murder. And last but not least, <strong>Learning</strong> is
+                            the skill, that
+                            determines the
+                            characters knowledge of scientific and theological fields. These points in these areas are crucial in
+                            different areas of
+                            ruling your kingdom and <strong>the key of success is always a fine balance</strong>.
+                        </p>
+                    </article>
+                    <div>
+                        <aside>
+                            <figure><a href="media/minimap_big.png"><img src="media/minimap.png" alt="Minimap"
+                                        class="img-thumbnail"></a>
+                                <figcaption>The Minimap in the vanilla base game</figcaption>
+                            </figure>
+                        </aside>
+                    </div>
+                    <article>
+                        <h3>The Mapmodes and the Minimap</h3>
+                        <p>It is not easy to know that exactly what <strong>cultures</strong> and <strong>religions</strong> do your
+                            subjects practice, especially when
+                            you rule a
+                            vast empire, like the <em>Abbasid Caliphate</em>, or the <em>Byzantine Empire</em>. But fear not,
+                            because there is a handful
+                            of <strong>map modes</strong>,
+                            that can be toggled by the player to <strong>access key information about every province</strong> in the
+                            game. For those
+                            players who are
+                            a bit less talented regarding <strong>geography</strong>, there is a <strong>minimap</strong>, that is a
+                            scaled down version of the map
+                            itself.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="to_the_top">
+                <a href="#top">To the top.</a>
+            </div>
+            <address>CSE8NS - 2022</address>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form - Crusader Kings II</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../beadando/style.css" title="normal">
+</head>
+
+<body class="pageformat">
+    <nav class="skip">
+        <a href="#main">Skip to content</a>
+    </nav>
+    <nav id="visually_impaired">
+        <button id="switch" onclick="toggleTheme()">Toggle contrast and letter size</button>
+        <script>
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+            }
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-norm') {
+                    setTheme('theme-dark');
+                }
+                else {
+                    setTheme('theme-norm');
+                }
+            }
+            (function () {
+                if (localStorage.getItem('theme') === 'theme-norm') {
+                    setTheme('theme-norm');
+                }
+                else {
+                    setTheme('theme-dark');
+                }
+            })();
+        </script>
+    </nav>
+    <header>
+        <div class="container-fluid">
+            <nav id="top">
+                <h1>Crusader Kings II</h1>
+                <figure><img src="media/header.jpg" alt="Header picture" class="img-fluid" id="header_pic"></figure>
+                <div class="menulist">
+                    <ul>
+                        <li><a href="index.html" class="other_pages">Opening page</a></li>
+                        <li><a href="beginners.html" class="other_pages">For beginners</a></li>
+                        <li><a href="dlcs.html" class="other_pages">List of DLCs</a></li>
+                        <li><a href="form.html" class="current">Form</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <form action="mailto:cse8ns@inf.elte.hu" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Form</legend>
+                <div>
+                    <strong>Name:</strong><br>
+                    <input type="text" id="name" placeholder="Enter your name" maxlength="30"> <br>
+                </div>
+                <br>
+                <div>
+                    <strong>Sex:</strong><br>
+                    <input type="radio" name="sex" id="f" value="option1">
+                    <label for="f">Female</label> 
+                    <input type="radio" name="sex" id="m" value="option1">
+                    <label for="m">Male</label>
+                    <input type="radio" name="sex" id="o" value="option1">
+                    <label for="o">Other</label>
+                </div>
+                <br>
+                <div>
+                    <strong>How many years did you spend on playing with the game?</strong><br>
+                    <input type="radio" name="time" id="0y" value="option1">
+                    <label for="0y">None</label>
+                    <input type="radio" name="time" id="1y" value="option2">
+                    <label for="1y">0,5 to 1</label>
+                    <input type="radio" name="time" id="2y" value="option3">
+                    <label for="2y">1 to 2</label>
+                    <input type="radio" name="time" id="3y" value="option4">
+                    <label for="3y">2 to 5</label>
+                    <input type="radio" name="time" id="4y" value="option5">
+                    <label for="4y">5+</label>
+                </div>
+                <br>
+                <div>
+                    <strong>Which expansion(s) would you buy?</strong><br>
+                    <input type="checkbox" id="1" value="option1">
+                    <label for="1">Sword of Islam</label>
+                    <input type="checkbox" id="2" value="option2">
+                    <label for="2">Legacy of Rome</label>
+                    <input type="checkbox" id="3" value="option3">
+                    <label for="3">Sunset Invasion</label>
+                    <input type="checkbox" id="4" value="option4">
+                    <label for="4">The Republic</label>
+                    <input type="checkbox" id="5" value="option5">
+                    <label for="5">The Old Gods</label>
+                    <input type="checkbox" id="6" value="option6">
+                    <label for="6">Sons of Abraham</label>
+                    <input type="checkbox" id="7" value="option7">
+                    <label for="7">Rajas of India</label>
+                    <input type="checkbox" id="8" value="option8">
+                    <label for="8">Charlemagne</label>
+                    <input type="checkbox" id="9" value="option9">
+                    <label for="9">Way of Life</label>
+                    <input type="checkbox" id="10" value="option10">
+                    <label for="10">Horse Lords</label>
+                    <input type="checkbox" id="11" value="option11">
+                    <label for="11">Conclave</label>
+                    <input type="checkbox" id="12" value="option12">
+                    <label for="12">The Reaper's Due</label>
+                    <input type="checkbox" id="13" value="option13">
+                    <label for="13">Monks and Mystics</label>
+                    <input type="checkbox" id="14" value="option14">
+                    <label for="14">Jade Dragon</label>
+                    <input type="checkbox" id="15" value="option15">
+                    <label for="15">Holy Fury</label>
+                </div>
+                <br>
+                <div>
+                    <label for="comment"><strong>How can I improve this website?</strong></label><br>
+                    <textarea name="comment" id="comment" placeholder="Enter your comment here" maxlength="300"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="to_the_top">
+            <a href="#top">To the top.</a>
+        </div>
+        <address>CSE8NS - 2022</address>
+    </footer>
+</body>
+
+</html>

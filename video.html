@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Video description - Crusader Kings II</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../beadando/style.css" title="normal" />
+</head>
+
+<body class="pageformat">
+    <div class="skip">
+        <a href="#main">Skip to content</a>
+    </div>
+    <div class="nav">
+        <button id="switch" onclick="toggleTheme()">Toggle contrast and letter size</button>
+        <script type="text/javascript">
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+            }
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-norm') {
+                    setTheme('theme-dark');
+                }
+                else {
+                    setTheme('theme-norm');
+                }
+            }
+            (function () {
+                if (localStorage.getItem('theme') === 'theme-norm') {
+                    setTheme('theme-norm');
+                }
+                else {
+                    setTheme('theme-dark');
+                }
+            })();
+        </script>
+    </div>
+    <div id="header">
+        <div id="top">
+            <h1>Crusader Kings II</h1>
+            <img src="media/header.jpg" alt="Header picture" class="img-fluid" id="header_pic"/>
+            <div id="menulist">
+                <ul>
+                    <li><a href="index.html" class="other_pages">Opening page</a></li>
+                    <li><a href="beginners.html" class="other_pages">For beginners</a></li>
+                    <li><a href="dlcs.html" class="other_pages">List of DLCs</a></li>
+                    <li><a href="form.html" class="other_pages">Form</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+            <div id="article">
+                <h2>The video's description</h2>
+                <p>This video is a short trailer for the last DLC called Holy Fury. During the video, we can
+                    see a medieval helmet, that is halved verticaly. The left-hand side, there is a pagan brutes helmet,
+                    with white painting marks, black dirty iron, and a deers antler growing out of it. On the right-hand
+                    side, there is a helmet of a Teutonic knight, with polished shining iron, closed of mouth area, and
+                    a helmet decoration that resembles a wing. In the background there are flashes and sparks on a pitch black
+                    background. Meanwhile, the narrator says the following lines: "You too would believe in demons, if you'd seen what I
+                    have seen.
+                    Armies of frenzied warriors bellowing eerie hymns to strange Gods. Conversion of this monstrous horde seems
+                    impossible,
+                    for their ways are not our ways. But we must stop them here, the true God protects us!"
+                    During the whole speech, we can hear some menacing music.
+                </p>
+            </div>
+    </div>
+    <div id="footer">
+        <div class="to_the_top">
+            <a href="#top">To the top.</a>
+        </div>
+        <address>CSE8NS - 2022</address>
+    </div>
+</body>
+
+</html>

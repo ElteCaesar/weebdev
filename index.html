@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Opening page - Crusader Kings II</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../beadando/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <nav class="skip">
+        <a href="#main">Skip to content</a>
+    </nav>
+    <nav id="visually_impaired">
+        <button id="switch" onclick="toggleTheme()">Toggle contrast and letter size</button>
+        <script>
+            function setTheme(themeName) 
+            {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+            }
+            function toggleTheme() 
+            {
+                if (localStorage.getItem('theme') === 'theme-norm') 
+                {
+                    setTheme('theme-dark');
+                }
+                else 
+                {
+                    setTheme('theme-norm');
+                }
+            }
+            (function () 
+            {
+                if (localStorage.getItem('theme') === 'theme-norm') {
+                    setTheme('theme-norm');
+                }
+                else 
+                {
+                    setTheme('theme-dark');
+                }
+            })();
+        </script>
+    </nav>
+    <header>
+        <div class="container-fluid">
+            <nav id="top">
+                <h1>Crusader Kings II</h1>
+                <figure><img src="media/header.jpg" alt="Header picture" class="img-fluid" id="header_pic"></figure>
+                <div class="menulist">
+                    <ul>
+                        <li><a href="index.html" class="current">Opening page</a></li>
+                        <li><a href="beginners.html" class="other_pages">For beginners</a></li>
+                        <li><a href="dlcs.html" class="other_pages">List of DLCs</a></li>
+                        <li><a href="form.html" class="other_pages">Form</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main id="main">
+        <div class="container-fluid">
+            <section class="noproblem">
+                <h2>Opening page</h2>
+                <article>
+                    <h3>About the game</h3>
+                    <p>This game came out in 2012. Developed by <strong>Paradox Interactive</strong> (<a
+                            href="https://www.paradoxinteractive.com" target="blank">their official website</a>), it aimed to
+                        <strong>simulate</strong>
+                        the world of medieval Europe, Asia, and Northern Africa. <strong>Powerful noble families</strong> rule different
+                        realms all
+                        over the map.
+                        They forge alliances, feast, and drink with each other. Also, they scheme, and wage war against their
+                        enemies. Through
+                        your decisions, you decide the fate of countless people. <strong>Lead your family</strong> to prosper, and rule,
+                        or to suffer
+                        and be
+                        neglected, it is all up to you. Furthermore, there are many <strong>historical figures</strong> and
+                        <strong>dynasties</strong> in the game.
+                        You can become
+                        <em>William The Conqueror</em>, and bend England to your knees. Take to the steppes of Eastern Europe and help
+                        the
+                        <span lang="hu"><em>Árpád</em></span> <em>dynasty</em> invade
+                        the Carpathian basin. Gather your most trusted soldiers from across Sweden and pillage The African coast as
+                        <span lang="sv"><em>Björn</em></span> <em>Ironside</em>. The list keeps on giving and giving, and there is
+                        simply no end to the interesting settings, from
+                        our history.
+                    </p>
+                </article>
+                <article>
+                    <h3>Trailer</h3>
+                    <video src="media/video_on_main_page.mp4" controls poster="media/video_thumbnail.png"
+                        class="ratio ratio-16x9"></video>
+                    <a href="video.html" target="blank">
+                        <h4><span>The video's description</span></h4>
+                    </a>
+                </article>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="to_the_top">
+                <a href="#top">To the top</a>
+            </div>
+            <address>CSE8NS - 2022</address>
+        </div>
+        
+    </footer>
+</body>
+
+</html>
